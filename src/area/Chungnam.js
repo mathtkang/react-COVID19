@@ -1,9 +1,11 @@
 import React from "react";
+import "../CovidMap.css";
 
 function Chungnam({ fill, onClick, onMouseOver, onMouseLeave }) {
   return (
     <polyline
       id="충남"
+      className="area"
       onClick={onClick}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
@@ -12,7 +14,7 @@ function Chungnam({ fill, onClick, onMouseOver, onMouseLeave }) {
       style={{
         fill: fill === undefined ? "#cdcccc" : fill,
         fillOpacity: 1,
-        stroke: "gray",
+        stroke: "white",
         strokeMiterlimit: "1",
       }}
       transform="translate(106.95522,19.462687)"

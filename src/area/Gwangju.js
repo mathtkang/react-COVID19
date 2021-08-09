@@ -1,9 +1,11 @@
 import React from "react";
+import "../CovidMap.css";
 
 function Gwangju({ fill, onClick, onMouseOver, onMouseLeave }) {
   return (
     <polyline
       id="광주"
+      className="area"
       onClick={onClick}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
@@ -13,7 +15,7 @@ function Gwangju({ fill, onClick, onMouseOver, onMouseLeave }) {
       style={{
         fill: fill === undefined ? "#cdcccc" : fill,
         fillOpacity: 1,
-        stroke: "gray",
+        stroke: "white",
         strokeMiterlimit: "1",
       }}
     />
